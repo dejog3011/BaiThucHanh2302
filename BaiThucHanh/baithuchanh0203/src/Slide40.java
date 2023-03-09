@@ -1,13 +1,23 @@
-public class Slide40 {
-    system.out.println("Viết chương trình nhập vào các số nguyên và tính tổng các số đó, nếu tổng lớn hơn > 100 thì kết thúc vòng lặp và hiển thị thông báo tổng của các số đã nhập.");
-    int sum = 0;
-    while (true) {
-        system.out.println("Nhập vào một số nguyên:");
-        int number = scanner.nextInt();
-        sum += number;
-        if (sum > 100) {
-            system.out.println("Tổng các số đã nhập là: " + sum);
-            break;
-        }
-    }
+package slide40.java;
+
+import java.util.Scanner;
+
+public class Slide40Java {
+
+    public static void main(String[] args) {
+      Scanner sc = new Scanner (System.in);
+      System.out.println("nhap so nguyen tu 1 den 7:");    
+      int number=sc.nextInt();
+      switch(number){
+          case 1: System.out.println("chu nhat");break;
+          case 2: System.out.println("thu hai");break;
+          case 3: System.out.println("thu ba");break;
+          case 4: System.out.println("thu tu");break;
+          case 5: System.out.println("thu nam");break;
+          case 6: System.out.println("thu sau");break;
+          case 7: System.out.println("thu bay");break;
+          default:System.out.println("ban da nhap sai so nguyen tu 1 den 7");break;
+
+      }
+              }
 }
